@@ -93,6 +93,7 @@ header.container {
     z-index: 1;
     margin-bottom: 0px;
     margin-right: 0px;
+    padding: 10px;
 }
 
 #bick4 {
@@ -102,6 +103,7 @@ header.container {
     z-index: 1;
     margin-bottom: 0px;
     margin-right: 0px;
+    padding: 10px;
 }
 
 #bick5 {
@@ -114,7 +116,7 @@ header.container {
 }
 
 #bick6 {
-    width: 165px;
+    width: 330px;
     height: 154px;
     float: left;
     z-index: 1;
@@ -123,12 +125,13 @@ header.container {
 }
 
 #bick7 {
-    width: 165px;
+    width: 330px;
     height: 154px;
     float: left;
     z-index: 1;
     margin-bottom: 0px;
     margin-right: 0px;
+    padding: 10px;
 }
 
 #bick8 {
@@ -156,6 +159,7 @@ header.container {
     z-index: 1;
     margin-bottom: 0px;
     margin-right: 0px;
+    padding: 10px;
 }
 
 #bick11 {
@@ -568,4 +572,15 @@ header.container {
     .navi-main h3 {
         display: none;
     }
+}
+.wellcome{
+    text-align: center; ;
+}
+.wellcome h1 {
+    color: #ffffff;
+}
+.wellcome h3 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-family: Tahoma
 }
