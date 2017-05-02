@@ -1,0 +1,270 @@
+/* Main Menu */
+.mainmenu-navigation {
+	float:left;
+	margin-top: 42px;
+}
+	
+.top-menu-center {
+	}
+
+
+.homemenu { 
+	text-transform:	uppercase;
+	padding:		0;
+	margin:			0;
+	margin-right: 50px;
+	}
+
+	.homemenu ul ul li:first-child {
+		border-top:1px solid #000;
+		}
+	.homemenu ul ul li:last-child {
+		border-bottom:1px solid #181818;
+		}
+		
+	.homemenu ul ul li:first-child a {
+		}
+	.homemenu ul ul li:last-child a {
+		}
+		
+.homemenu ul ul li:first-child:after {
+	content: " ";
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: -10px;
+	z-index: 2;
+	left:40px;
+	border: 5px solid transparent;
+	border-bottom-color: #000;
+	}
+	.homemenu ul ul ul li:first-child:after {
+		border: none;
+		}
+		.homemenu ul ul ul ul li:first-child:after {
+			border:none;
+			}
+			.homemenu ul ul ul ul ul li:first-child:after {
+				border:none;
+				}
+
+.homemenu a { color:#666; text-decoration:none;}
+.homemenu ul li {
+	}
+	
+.homemenu ul li a {
+	letter-spacing:0.8px;
+	padding: 10px 25px 15px;
+	border-right: 1px solid rgba(255, 255, 255, 0.12);
+	}
+	
+.homemenu ul ul li a {
+	border-bottom:1px solid #fff;
+	border-right:none;
+	border-top:none;
+}
+.homemenu ul ul li:hover>a {
+	border-top:none;
+}
+.homemenu ul ul {
+-webkit-box-shadow:  1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+        box-shadow:  1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+	position: relative;
+	z-index: 200;
+}
+.homemenu ul ul li{
+	background:#222;
+	}
+.homemenu ul ul li:hover {	 }
+.homemenu ul ul li a {
+	color:#eee; 
+	font-size: 12px;
+	font-weight:400;
+	letter-spacing:0;
+	text-transform:	none;
+	border-bottom:1px solid #333;
+	}
+.homemenu ul ul ul li a {
+	}
+.homemenu ul ul li:hover>a { 
+	color:#000;
+	}
+	
+.homemenu ul li span {
+	color: #AAAAAA;
+	display: block;
+	font-size: 11px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 0;
+	padding: 12px 0 10px;
+	text-transform: lowercase;
+	display:none;
+	}
+	
+.homemenu ul li .menu-title {
+	color: #fff;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top:10px;
+	-webkit-transition: color 0.3s ease-in;
+	-moz-transition: color 0.3s ease-in;
+	transition: color 0.3s ease;
+	text-shadow: 1px 1px #000;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.5) 2px 2px rgba(0, 0, 0, 0.1);
+	}
+	.homemenu ul li:hover .menu-title{
+	color: #fff;
+	-webkit-transition: color 0.3s ease-in;
+	-moz-transition: color 0.3s ease-in;
+	transition: color 0.3s ease;
+	text-shadow: 1px 1px #000;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+	}
+	
+	.homemenu .top-menu ul {
+		position:		absolute;
+		top:			-999em;
+		width:			250px; /* left offset of submenus need to match (see below) */
+		text-align:		left;
+	}
+
+	.homemenu .top-menu ul li {
+		width:			100%;
+	}
+	.homemenu .top-menu li:hover {
+		visibility:		inherit; /* fixes IE7 'sticky bug' */
+	}
+	.homemenu .top-menu li {
+		float:			left;
+		position:		relative;
+	}
+	.homemenu .top-menu a {
+		display:		block;
+		position:		relative;
+	}
+	
+	
+	.homemenu .top-menu li:hover ul,
+	.homemenu .top-menu li.sfHover ul {
+		left:			0;
+		top:			35px; /* match top ul list item height */
+	}
+	.homemenu ul.top-menu li:hover li ul,
+	.homemenu ul.top-menu li.sfHover li ul {
+		top:			-999em;
+	}
+	.homemenu ul.top-menu li li:hover ul,
+	.homemenu ul.top-menu li li.sfHover ul {
+		left:			19.3em; /* match ul width */
+		top:			0;
+	}
+	.homemenu ul.top-menu li li:hover li ul,
+	.homemenu ul.top-menu li li.sfHover li ul {
+		top:			-999em;
+	}
+	.homemenu ul.top-menu li li li:hover ul,
+	.homemenu ul.top-menu li li li.sfHover ul {
+		left:			19.3em; /* match ul width */
+		top:			0;
+	}
+
+	.homemenu .top-menu a {
+		text-decoration:none;
+	}
+	.homemenu .top-menu li {
+	}
+	.homemenu .top-menu li li:hover, .top-menu li li.sfHover,
+	.homemenu .top-menu a:focus, .top-menu a:hover, .top-menu a:active {
+		outline:		0;
+	}
+
+	/*** arrows **/
+	.homemenu .top-menu a.sf-with-ul {
+		padding-right: 	25px;
+		min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */
+	}
+	.homemenu .top-menu ul a.sf-with-ul {
+		padding: 18px 20px 14px;
+		min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */
+	}
+	.homemenu ul ul li a {
+		padding: 18px 20px;
+	}
+	.homemenu .sf-sub-indicator {
+		position:		absolute;
+		display:		block;
+		right:			.75em;
+		top:			1.05em; /* IE6 only */
+		width:			10px;
+		height:			10px;
+		text-indent: 	-999em;
+		overflow:		hidden;
+		background:		url('../../images/menu/arrows-ffffff.png') no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */
+		opacity: 		0.4;
+	}
+	.homemenu a > .sf-sub-indicator {  /* give all except IE6 the correct values */
+	background-position: 0 -80px;
+	top: -8px;
+	}
+	/* apply hovers to modern browsers */
+	.homemenu a:focus > .sf-sub-indicator,
+	.homemenu a:hover > .sf-sub-indicator,
+	.homemenu a:active > .sf-sub-indicator,
+	.homemenu li:hover > a > .sf-sub-indicator,
+	.homemenu li.sfHover > a > .sf-sub-indicator {
+		background-position: -10px -80px; /* arrow hovers for modern browsers*/
+	}
+
+	/* point right for anchors in subs */
+	.homemenu .top-menu ul .sf-sub-indicator { background-position:  -10px 0; }
+	.homemenu .top-menu ul a > .sf-sub-indicator { background-position:  0 0; top:10px; }
+	/* apply hovers to modern browsers */
+	.homemenu .top-menu ul a:focus > .sf-sub-indicator,
+	.homemenu .top-menu ul a:hover > .sf-sub-indicator,
+	.homemenu .top-menu ul a:active > .sf-sub-indicator,
+	.homemenu .top-menu ul li:hover > a > .sf-sub-indicator,
+	.homemenu .top-menu ul li.sfHover > a > .sf-sub-indicator {
+		background-position: -10px 0; /* arrow hovers for modern browsers*/
+	}
+
+	/*** shadows for all but IE6 ***/
+	.homemenu .sf-shadow ul {
+
+	}
+	.homemenu .sf-shadow ul.sf-shadow-off {
+		background: transparent;
+	}
+
+	.homemenu .top-menu {
+		display:inline-block;
+	}
+
+
+.homemenu li.current-menu-item,
+.homemenu li.current-menu-parent,
+.homemenu li.current-menu-ancestor {
+	outline:		0;
+}
+
+.homemenu li:hover .menu-title {
+	color:#fff;
+}
+
+.homemenu ul li:hover {
+	background-color:#000;
+	background-color: rgba(0,0,0,0.2);
+}
+
+.homemenu ul.top-menu li li:hover ul,
+.homemenu ul.top-menu li li.sfHover ul {
+left: 251px; /* match ul width */
+top: -1px;
+}
+.homemenu ul.top-menu li li li:hover ul,
+.homemenu ul.top-menu li li li.sfHover ul {
+left: 251px; /* match ul width */
+top: -1px;
+}
