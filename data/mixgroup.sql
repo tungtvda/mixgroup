@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th5 03, 2017 lúc 03:33 SA
+-- Thời gian đã tạo: Th5 03, 2017 lúc 09:20 SA
 -- Phiên bản máy phục vụ: 10.1.21-MariaDB
 -- Phiên bản PHP: 7.0.15
 
@@ -52,32 +52,47 @@ INSERT INTO `admin` (`Id`, `khachsan_id`, `TenDangNhap`, `Full_name`, `MatKhau`,
 
 CREATE TABLE `config` (
   `Id` int(11) NOT NULL,
-  `Logo` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `Icon` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `banner_email` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `footer_email` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `Name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `Address` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `Phone` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `fax` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `Hotline` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `Email` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `Website` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `Map` text COLLATE utf8_unicode_ci,
-  `Address_hcm` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `Phone_hcm` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `fax_hcm` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `Hotline_hcm` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `Email_hcm` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `Map_hcm` text COLLATE utf8_unicode_ci
+  `logo` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `icon` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `backgroup` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `name_en` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `name_cn` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `name_color` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `name_size` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title` varchar(70) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title_en` varchar(70) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `title_cn` varchar(70) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `keyword` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` varchar(170) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `config`
 --
 
-INSERT INTO `config` (`Id`, `Logo`, `Icon`, `banner_email`, `footer_email`, `Name`, `Address`, `Phone`, `fax`, `Hotline`, `Email`, `Website`, `Map`, `Address_hcm`, `Phone_hcm`, `fax_hcm`, `Hotline_hcm`, `Email_hcm`, `Map_hcm`) VALUES
-(1, '/azbooking/view/admin/Themes/kcfinder/upload/images/cauhinh/logoazbooking.png', '/azbooking/view/admin/Themes/kcfinder/upload/images/cauhinh/favicon.png', NULL, NULL, 'MIX TOURIST COMPANY', 'Phòng 2001, tầng 20, tòa nhà 137 Nguyễn Ngọc Vũ, Cầu Giấy, Hà Nội', '(+84) 4 6281 4340', '(+84) 4 6281 4341', '(+84)94 161 9956', 'sales@mixtourist.com ', '', '  <iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14898.1817374241!2d105.80953!3d21.010851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4be5d76ac6ba18d3!2zQ2h1bmcgQ8awIDEzNyBOZ3V54buFbiBOZ-G7jWMgVsWp!5e0!3m2!1svi!2sus!4v1480583836972\"                     width=\"100%\" height=\"250\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>', 'Tầng 3, số 2 Nguyễn Thiện Thuật, Phường 24 Quận Bình Thạnh, TP.HCM', '(+84) 8 6258 8510', '(+84) 8 6258 8512', '(+84) 943 838 222', 'sales@mixtourist.com ', ' <iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15676.344842857752!2d106.699668!3d10.804709!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528c759b1f9f5%3A0xa1fe866799a22c83!2zMiBOZ3V54buFbiBUaGnhu4duIFRodeG6rXQsIFBoxrDhu51uZyAyNCwgQsOsbmggVGjhuqFuaCwgSOG7kyBDaMOtIE1pbmgsIFZp4buHdCBOYW0!5e0!3m2!1svi!2sus!4v1480583873869\"                     width=\"100%\" height=\"250\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>');
+INSERT INTO `config` (`Id`, `logo`, `icon`, `backgroup`, `name`, `name_en`, `name_cn`, `name_color`, `name_size`, `title`, `title_en`, `title_cn`, `keyword`, `description`) VALUES
+(1, '/azbooking/view/admin/Themes/kcfinder/upload/images/cauhinh/logoazbooking.png', '/azbooking/view/admin/Themes/kcfinder/upload/images/cauhinh/favicon.png', NULL, 'MIX TOURIST COMPANY', NULL, NULL, '', '', NULL, NULL, NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `list_logo`
+--
+
+CREATE TABLE `list_logo` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `name_en` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `name_cn` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `img` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `date` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `link` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `content` text COLLATE utf8_unicode_ci,
+  `content_en` text COLLATE utf8_unicode_ci,
+  `content_cn` text COLLATE utf8_unicode_ci,
+  `position` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -96,6 +111,12 @@ ALTER TABLE `config`
   ADD PRIMARY KEY (`Id`);
 
 --
+-- Chỉ mục cho bảng `list_logo`
+--
+ALTER TABLE `list_logo`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT cho các bảng đã đổ
 --
 
@@ -109,6 +130,11 @@ ALTER TABLE `admin`
 --
 ALTER TABLE `config`
   MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT cho bảng `list_logo`
+--
+ALTER TABLE `list_logo`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
