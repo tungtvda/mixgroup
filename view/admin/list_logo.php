@@ -29,7 +29,7 @@ function view_list_logo($data)
 //
 function showTableHeader()
 {
-    return '<th>id</th><th>name</th><th>name_en</th><th>name_cn</th><th>img</th>';
+    return '<th>id</th><th>name</th><th>name_en</th><th>name_cn</th><th>img</th><th>position</th>';
 }
 //
 function showTableBody($data)
@@ -43,6 +43,7 @@ function showTableBody($data)
         $TableBody.="<td>".$obj->name_en."</td>";
         $TableBody.="<td>".$obj->name_cn."</td>";
         $TableBody.="<td><img src=\"".$obj->img."\" width=\"50px\" height=\"50px\"/> </td>";
+        $TableBody.="<td>".$obj->position."</td>";
         $TableBody.="<td><a href=\"?action=edit&id=".$obj->id."\" title=\"Edit\"><img src=\"".SITE_NAME."/view/admin/Themes/images/pencil.png\" alt=\"Edit\"></a>";
         $TableBody.="<a href=\"?action=delete&id=".$obj->id."\" title=\"Delete\" onClick=\"return confirm('Bạn có chắc chắc muốn xóa?')\"><img src=\"".SITE_NAME."/view/admin/Themes/images/cross.png\" alt=\"Delete\"></a> ";
         $TableBody.="</td>";
@@ -61,6 +62,7 @@ function showFrom($form,$ListKey=array())
     $str_from.='<p><label>date</label><input class="text-input small-input" type="text"  name="date" value="'.(($form!=false)?$form->date:'').'" /></p>';
     $str_from.='<p><label>link</label><input class="text-input small-input" type="text"  name="link" value="'.(($form!=false)?$form->link:'').'" /></p>';
     $str_from.='<p><label>link_fanpage</label><input class="text-input small-input" type="text"  name="link_fanpage" value="'.(($form!=false)?$form->link_fanpage:'').'" /></p>';
+    $str_from.='<p><label>link_youtube</label><input class="text-input small-input" type="text"  name="link_youtube" value="'.(($form!=false)?$form->link_youtube:'').'" /></p>';
     $str_from.='<p><label>content</label><textarea name="content">'.(($form!=false)?$form->content:'').'</textarea><script type="text/javascript">CKEDITOR.replace(\'content\'); </script></p>';
     $str_from.='<p><label>content_en</label><textarea name="content_en">'.(($form!=false)?$form->content_en:'').'</textarea><script type="text/javascript">CKEDITOR.replace(\'content_en\'); </script></p>';
     $str_from.='<p><label>content_cn</label><textarea name="content_cn">'.(($form!=false)?$form->content_cn:'').'</textarea><script type="text/javascript">CKEDITOR.replace(\'content_cn\'); </script></p>';

@@ -23,7 +23,64 @@ function print_template($data=array(),$tem)
     }
     print $ft->parse_and_return($tem);
 }
-function link_detail($app)
+
+function print_item($file,$ListItem,$LocDau=false,$LocDauAssign=false,$numberformat=false)
 {
-    return SITE_NAME.'/app/'.LocDau($app->Name).'/'.$app->Id.'/';
+    if(count($ListItem)>0)
+    {
+        $array_var=get_object_vars($ListItem[0]);
+        $var_name_array=array_keys($array_var);
+        $result='';
+        $ft=new FastTemplate(DIR.'/view/default/template/item');
+        $ft->define('item',$file.'.tpl');
+        $ft->assign('SITE-NAME',SITE_NAME);
+        $dem=1;
+        foreach($ListItem as $item)
+        {
+            foreach($var_name_array as $var)
+            {
+                if($LocDau!=false)
+                {
+                    if($LocDau==$var)
+                    {
+                        $ft->assign($LocDauAssign,LocDau($item->$var));
+                    }
+                }
+
+                if($numberformat!=false)
+                {
+                    if($numberformat==$var)
+                    {
+                        $ft->assign($var,number_format($item->$var,0,'.','.'));
+                    }
+                    else
+                    {
+                        $ft->assign($var,$item->$var);
+                    }
+                }
+                else
+                {
+                    $ft->assign($var,$item->$var);
+                }
+            }
+            if(get_class($item)=='list_logo')
+            {
+                $ft->assign('name',returnLanguageField('name', $item));
+                $ft->assign('content',returnLanguageField('content', $item));
+            }
+            $dem=$dem+1;
+            $result.=$ft->parse_and_return('item');
+        }
+        return $result;
+    }
+    else
+    {
+        return '';
+    }
+
 }
+
+
+
+
+
