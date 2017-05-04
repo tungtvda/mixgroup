@@ -3,6 +3,7 @@ require_once '../../config.php';
 require_once DIR.'/model/adminService.php';
 require_once DIR.'/view/admin/admin.php';
 require_once DIR.'/common/messenger.php';
+require_once(DIR."/common/hash_pass.php");
 $data=array();
 $insert=true;
 if(isset($_SESSION["Admin"]))
@@ -25,6 +26,7 @@ if(isset($_SESSION["Admin"]))
                 $data['tab2_class']='default-tab current';
                 $data['tab1_class']=' ';
                 $insert=false;
+                $pass_old=$new_obj[0]->MatKhau;
             }
             else header('Location: '.SITE_NAME.'/controller/admin/admin.php');
         }
@@ -68,11 +70,20 @@ if(isset($_SESSION["Admin"]))
       $new_obj=new admin($array);
         if($insert)
         {
+            $new_obj->MatKhau=hash_pass($_POST["Pass"]);
+            $new_obj->MatKhau=$Pass;
             admin_insert($new_obj);
             header('Location: '.SITE_NAME.'/controller/admin/admin.php');
         }
         else
         {
+            if($pass_old==$_POST["MatKhau"]){
+                $new_obj->MatKhau=$pass_old;
+            }
+            else{
+                $new_obj->MatKhau=hash_pass($_POST["MatKhau"]);
+            }
+
             $new_obj->Id=$_GET["Id"];
             admin_update($new_obj);
             $insert=false;

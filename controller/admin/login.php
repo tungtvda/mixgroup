@@ -78,7 +78,7 @@
                                                     placeholder="Tên đăng nhập"/></p>
 
                 <p class="animate5 bounceIn"><input type="password" id="password" name="Pass" placeholder="Mật khẩu"
-                                                    /></p>
+                        /></p>
 
                 <p class="animate6 bounceIn">
                     <button class="btn btn-default btn-block">ĐĂNG NHẬP</button>
