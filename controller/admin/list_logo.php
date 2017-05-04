@@ -54,7 +54,7 @@ if(isset($_SESSION["Admin"]))
             header('Location: '.SITE_NAME.'/controller/admin/list_logo.php');
         }
     }
-    if(isset($_POST["name"])&&isset($_POST["name_en"])&&isset($_POST["name_cn"])&&isset($_POST["img"])&&isset($_POST["date"])&&isset($_POST["link"])&&isset($_POST["link_fanpage"])&&isset($_POST["content"])&&isset($_POST["content_en"])&&isset($_POST["content_cn"])&&isset($_POST["position"]))
+    if(isset($_POST["name"])&&isset($_POST["name_en"])&&isset($_POST["name_cn"])&&isset($_POST["img"])&&isset($_POST["date"])&&isset($_POST["link"])&&isset($_POST["link_fanpage"])&&isset($_POST["link_youtube"])&&isset($_POST["content"])&&isset($_POST["content_en"])&&isset($_POST["content_cn"])&&isset($_POST["position"]))
     {
        $array=$_POST;
        if(!isset($array['id']))
@@ -73,6 +73,8 @@ if(isset($_SESSION["Admin"]))
        $array['link']='0';
        if(!isset($array['link_fanpage']))
        $array['link_fanpage']='0';
+       if(!isset($array['link_youtube']))
+       $array['link_youtube']='0';
        if(!isset($array['content']))
        $array['content']='0';
        if(!isset($array['content_en']))
