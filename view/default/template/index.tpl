@@ -27,7 +27,7 @@
                     <div class="col-md-1 col-sm-1 col-xs-6">
                         <div class="header-sticky-logo">
                             <a href="{SITE-NAME}" rel="home">
-                                <img alt="{name}" src="{link_anh}" style="    max-width: inherit;" class=""></a>
+                                <img alt="{name}" src="{link_anh}" style="    max-width: inherit;height: 50px" class=""></a>
                         </div>
                     </div>
                     <div class="col-md-11 col-sm-11 col-xs-6">
