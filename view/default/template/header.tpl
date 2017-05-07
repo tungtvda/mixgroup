@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<!-- Mirrored from html.arrowpress.net/riven/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 30 Apr 2017 01:13:48 GMT -->
-<!-- Added by HTTrack -->
+
 <meta http-equiv="content-type" content="text/html;charset=UTF-8"/><!-- /Added by HTTrack -->
 <head>
-    <!-- meta data tags & loading css files -->
     <meta charset="UTF-8"/>
     <title>{Title}</title>
     <meta name="description" content="{description}"/>
