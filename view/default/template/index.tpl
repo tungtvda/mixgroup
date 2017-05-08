@@ -9,7 +9,7 @@
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <nav id="site-navigation" class="main-navigation">
                             <button style="color: #ffffff" class="menu-toggle">
-                                <i class="fa fa-bars"></i>
+                                <img class="icon_language" src="{SITE-NAME}/view/default/themes/images/language.png">
                                 <span> <img style="width: 30px;" src="{SITE-NAME}/view/default/themes/images/tungtv/{language_img}.png"></span></button>
                             <div class="menu-onepage-applanding-container">
                                 <ul id="menu-onepage-applanding" class="mega-menu">

@@ -13,15 +13,22 @@
                     <div class="event_post_desc">
                         {content}
                     </div>
-                    <a href="{link}"
+
+                    <a title="Facebook" href="{link_fanpage}"
                        class="detail various">
-                        <i class="fa fa-globe"></i> Website</a>
-                    <a href="{link_fanpage}"
+                       <!-- <i class="fa fa-facebook"></i> Fanpage-->
+                        <img class="icon_share" src="{SITE-NAME}/view/default/themes/images/facebook.png">
+                       </a>
+                    <a title="Website" href="{link}"
                        class="detail various">
-                        <i class="fa fa-facebook"></i> Fanpage</a>
-                    <a href="{link_youtube}"
+                        <!--<i class="fa fa-globe"></i> Website-->
+                        <img class="icon_share" src="{SITE-NAME}/view/default/themes/images/website.png">
+                    </a>
+                    <a title="Youtube" href="{link_youtube}"
                        class="detail various">
-                        <i class="fa fa-youtube"></i> Youtube</a>
+                        <!--<i class="fa fa-youtube"></i> Youtube-->
+                        <img class="icon_share" src="{SITE-NAME}/view/default/themes/images/youtube.png">
+                    </a>
                 </div>
             </div>
         </div>
