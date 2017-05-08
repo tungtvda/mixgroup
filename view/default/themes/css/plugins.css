@@ -2,7 +2,7 @@
 /*****************************************************************/
 /*
 /*** 01. Bootstrap
-/*** 02. FontAwesome Icon
+/*** 02. fontawesome Icon
 /*** 03. Owl Carousel
 
 /*
@@ -5916,14 +5916,14 @@ button.close {
 /* FONT PATH
  * -------------------------- */
 @font-face {
-  font-family: 'FontAwesome';
+  font-family: 'fontawesome';
   src: url("../fonts/fontawesome-webfont3295.eot?v=4.5.0");
   src: url("../fonts/fontawesome-webfontd41d.eot?#iefix&v=4.5.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont3295.html?v=4.5.0") format("woff2"), url("../fonts/fontawesome-webfont3295-2.html?v=4.5.0") format("woff"), url("../fonts/fontawesome-webfont3295-3.html?v=4.5.0") format("truetype"), url("../fonts/fontawesome-webfont3295.svg?v=4.5.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 .fa {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 14px/1 fontawesome;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;

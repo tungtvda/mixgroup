@@ -35,7 +35,7 @@
     <div class="leftpanel">
 
         <div class="logopanel" style="text-align: center!important;">
-           <a href="http://vifonic.com/"><img style="height: 36px" src="{SITE-NAME}/view/admin/Themes/images/logo.png" title="Hệ thống quản trị của Vifonic.com" alt="Hệ thống quản trị của Vifonic.com"></a>
+           <a target="_blank" href="http://mixtourist.com.vn/"><img style="height: 36px" src="http://mixtourist.com.vn/view/admin/Themes/kcfinder/upload/images/cauhinh/logomixtour.png" title="Hệ thống quản trị của Mixtourist.com" alt="Hệ thống quản trị của Mixtourist.com"></a>
         </div>
         <!--logopanel-->
 
