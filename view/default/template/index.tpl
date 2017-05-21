@@ -106,7 +106,7 @@
 <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/jquery.nav.js"></script>
 <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/jquery.validate.js"></script>
 <script type="text/javascript" src="{SITE-NAME}/view/default/themes/js/functions.js"></script>
-<a class="scroll-to-top"><i class="fa fa-chevron-up"></i></a></body>
+<a class="scroll-to-top"><img style="width: 30px" src="{SITE-NAME}/view/default/themes/images/icon-7.png"></a></body>
 
 <script type="text/javascript">
     jQuery(document).ready(function () {
