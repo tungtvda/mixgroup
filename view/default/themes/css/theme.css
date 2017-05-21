@@ -390,18 +390,18 @@ select {
     font-weight: 700; }
 
 .scroll-to-top {
-  border: 2px solid #ff0909;
+  /*border: 2px solid #ff0909;*/
   bottom: -100px;
   box-shadow: 0 0 0 0 #fff inset;
-  color: #ff0909;
+  /*color: #ff0909;*/
   cursor: pointer;
-  height: 40px;
+  /*height: 40px;*/
   overflow: auto;
   padding-top: 6px;
   position: fixed;
   right: 25px;
   text-align: center;
-  width: 40px;
+  /*width: 40px;*/
   z-index: 9999; }
 
 .footer-v1:after {

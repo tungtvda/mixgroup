@@ -10,7 +10,7 @@ if(!defined('SITE_NAME'))
     require_once '../../config.php';
 }
 if(!isset($_SESSION['language'])){
-    $_SESSION['language']="vn";
+    $_SESSION['language']="en";
 }
 require_once DIR.'/controller/default/public.php';
 $data['config']=config_getByTop(1,'','');
