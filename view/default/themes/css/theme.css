@@ -4916,7 +4916,9 @@ blockquote {
 
 .map_event iframe {
   width: 100%; }
-
+.row-event{
+  margin-bottom: 30px;
+}
 .event-thumb {
   height: 215px;
   position: relative;

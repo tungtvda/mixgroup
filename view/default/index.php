@@ -23,7 +23,7 @@ function show_index($data = array())
                                         </a>
                                     </li>
                                     <li class="menu-item">
-                                        <a class="cn_lang" href="javascript:void(0)">英语</a>
+                                        <a class="cn_lang" href="javascript:void(0)">中国</a>
                                     </li>';
     }
     else{
@@ -41,7 +41,7 @@ function show_index($data = array())
                                         </a>
                                     </li>
                                     <li class="menu-item">
-                                        <a class="cn_lang" href="javascript:void(0)">英语</a>
+                                        <a class="cn_lang" href="javascript:void(0)">中国</a>
                                     </li>';
         }
     }
